@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арт-Хаб: Мир искусства и хобби</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-palette"></i>
+                <h1>Арт-Хаб</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#about" class="nav-link">О проекте</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#hobbies" class="nav-link">Хобби</a></li>
+                    <li><a href="#examples" class="nav-link">Примеры</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">Мир искусства и хобби</h2>
+            <p class="hero-subtitle">Откройте для себя творчество во всех его проявлениях</p>
+            <a href="#gallery" class="hero-button">Исследовать</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- О проекте -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">О проекте</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Добро пожаловать в мир творчества и самовыражения! Наш проект посвящён различным видам искусства и хобби, которые делают жизнь ярче и интереснее.</p>
+                    <p>Здесь вы найдёте вдохновение, узнаете о разных творческих направлениях и сможете выбрать занятие по душе.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-paint-brush"></i>
+                            <h3>Визуальное искусство</h3>
+                            <p>Живопись, рисунок, графика</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <h3>Музыка</h3>
+                            <p>Игра на инструментах, пение</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hands"></i>
+                            <h3>Рукоделие</h3>
+                            <p>Вязание, вышивка, лепка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="images/1.avif" alt="Искусство">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея искусства -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Галерея искусства</h2>
+            <p class="section-subtitle">Шедевры различных направлений и стилей</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item painting">
+                    <div class="gallery-img">
+                        <img src="images/2.avif" alt="Живопись">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Живопись</h3>
+                        <p>Масло, акварель, акрил</p>
+                        <span class="gallery-badge">Традиционное</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item digital">
+                    <div class="gallery-img">
+                        <img src="images/3.avif" alt="Цифровое искусство">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Цифровое искусство</h3>
+                        <p>Digital painting, 3D графика</p>
+                        <span class="gallery-badge">Современное</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item sculpture">
+                    <div class="gallery-img">
+                        <img src="images/4.avif" alt="Скульптура">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Скульптура</h3>
+                        <p>Глина, дерево, металл</p>
+                        <span class="gallery-badge">Объёмное</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item photography">
+                    <div class="gallery-img">
+                        <img src="images/5.avif" alt="Фотография">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Фотография</h3>
+                        <p>Пейзажи, портреты, макро</p>
+                        <span class="gallery-badge">Техническое</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-controls">
+                <button class="control-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="gallery-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="control-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Виды хобби -->
+    <section class="section hobbies-section" id="hobbies">
+        <div class="container">
+            <h2 class="section-title">Популярные хобби</h2>
+            <p class="section-subtitle">Найдите занятие по душе</p>
+            
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Чтение</h3>
+                    <p>Погружение в литературные миры, развитие воображения и словарного запаса</p>
+                    <ul class="hobby-list">
+                        <li>Художественная литература</li>
+                        <li>Поэзия</li>
+                        <li>Научная фантастика</li>
+                    </ul>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Кулинария</h3>
+                    <p>Искусство приготовления пищи, эксперименты с рецептами разных культур</p>
+                    <ul class="hobby-list">
+                        <li>Выпечка</li>
+                        <li>Национальная кухня</li>
+                        <li>Здоровое питание</li>
+                    </ul>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Садоводство</h3>
+                    <p>Работа с растениями, создание зелёных уголков и выращивание цветов</p>
+                    <ul class="hobby-list">
+                        <li>Комнатные растения</li>
+                        <li>Огород</li>
+                        <li>Ландшафтный дизайн</li>
+                    </ul>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Фотография</h3>
+                    <p>Запечатление моментов, изучение композиции и работы с техникой</p>
+                    <ul class="hobby-list">
+                        <li>Портретная съёмка</li>
+                        <li>Пейзажи</li>
+                        <li>Макросъёмка</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Примеры работ -->
+    <section class="section examples-section" id="examples">
+        <div class="container">
+            <h2 class="section-title">Примеры работ</h2>
+            <p class="section-subtitle">Вдохновляйтесь творчеством других</p>
+            
+            <div class="examples-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="paintings">Живопись</button>
+                    <button class="tab-btn" data-tab="photos">Фотографии</button>
+                    <button class="tab-btn" data-tab="handmade">Рукоделие</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="paintings">
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <img src="images/6.avif" alt="Акварель">
+                                <div class="example-info">
+                                    <h4>Акварельный пейзаж</h4>
+                                    <p>Техника "по-мокрому", свободные мазки</p>
+                                </div>
+                            </div>
+                            <div class="example-item">
+                                <img src="images/7.avif" alt="Масло">
+                                <div class="example-info">
+                                    <h4>Натюрморт маслом</h4>
+                                    <p>Классическая техника, игра света</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="photos">
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <img src="images/8.avif" alt="Фото пейзаж">
+                                <div class="example-info">
+                                    <h4>Горный пейзаж</h4>
+                                    <p>Съёмка на рассвете, естественное освещение</p>
+                                </div>
+                            </div>
+                            <div class="example-item">
+                                <img src="images/9.avif" alt="Фото портрет">
+                                <div class="example-info">
+                                    <h4>Портретная съёмка</h4>
+                                    <p>Студийный свет, работа с моделью</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="handmade">
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <img src="images/10.avif" alt="Вязание">
+                                <div class="example-info">
+                                    <h4>Вязаный свитер</h4>
+                                    <p>Ручная работа, норвежские узоры</p>
+                                </div>
+                            </div>
+                            <div class="example-item">
+                                <img src="images/11.avif" alt="Керамика">
+                                <div class="example-info">
+                                    <h4>Глиняная посуда</h4>
+                                    <p>Ручная лепка, традиционная роспись</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и подписка -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Присоединяйтесь к сообществу</h2>
+            <p class="section-subtitle">Делитесь творчеством и находите единомышленников</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Подпишитесь на рассылку</h3>
+                    <p>Получайте новые идеи для творчества и информацию о мастер-классах</p>
+                    
+                    <form class="subscribe-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="">Выберите интересующие хобби</option>
+                                <option value="painting">Живопись</option>
+                                <option value="photo">Фотография</option>
+                                <option value="handmade">Рукоделие</option>
+                                <option value="music">Музыка</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Подписаться</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Наши контакты</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-vk"></i>
+                            <span>ВКонтакте</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> info@arthub.ru</p>
+                        <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Творческая, 15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-palette"></i>
+                    <h3>Арт-Хаб</h3>
+                    <p>Мир искусства и хобби</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#hobbies">Хобби</a></li>
+                        <li><a href="#examples">Примеры</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-news">
+                    <h4>Новые материалы</h4>
+                    <p>Подпишитесь, чтобы первыми узнавать о новых статьях и мастер-классах</p>
+                    <button class="news-btn">Подписаться</button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Арт-Хаб. Все права защищены.</p>
+                <p>Проект по веб-дизайну: "Виды искусства и хобби"</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка наверх -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Пояснительный текст (скрыт, но виден при печати) -->
+    <div class="explanation-text">
+        <h2>Пояснительная записка к проекту</h2>
+        <h3>Тема проекта: "Виды искусства и хобби"</h3>
+        
+        <h4>1. Выбор дизайна и визуальные элементы:</h4>
+        <p>Для сайта выбрана мягкая, творческая цветовая палитра с акцентами в тёплых тонах (#8a6d62 - терракотовый, #c9a87a - песочный), что создаёт уютную атмосферу, ассоциирующуюся с творчеством и ручной работой. Использованы элегантные шрифты: Playfair Display для заголовков (ассоциация с классическим искусством) и Raleway для основного текста (читаемость и современность).</p>
+        
+        <p>Визуальные элементы включают:</p>
+        <ul>
+            <li>Адаптивную сетку карточек с эффектами наведения (hover effects)</li>
+            <li>Плавные анимации переходов между состояниями</li>
+            <li>Иконки Font Awesome для быстрого визуального восприятия</li>
+            <li>Фотографии высокого качества из Unsplash, демонстрирующие разные виды искусства</li>
+            <li>Систему вкладок (tabs) для организации контента без перезагрузки страницы</li>
+        </ul>
+        
+        <h4>2. Структура контента:</h4>
+        <p>Сайт имеет логичную структуру, ведущую пользователя от общего к частному:</p>
+        <ol>
+            <li><strong>Герой-секция:</strong> Введение в тему, визуальный акцент</li>
+            <li><strong>О проекте:</strong> Объяснение цели и направлений</li>
+            <li><strong>Галерея:</strong> Визуальная демонстрация видов искусства</li>
+            <li><strong>Хобби:</strong> Практическая информация для выбора занятия</li>
+            <li><strong>Примеры:</strong> Конкретные работы для вдохновения</li>
+            <li><strong>Сообщество:</strong> Возможность подключиться к движению</li>
+        </ol>
+        
+        <h4>3. Соответствие теме:</h4>
+        <p>Дизайн полностью соответствует теме "искусство и хобби":</p>
+        <ul>
+            <li><strong>Творческая атмосфера:</strong> Цвета, шрифты и расположение элементов создают ощущение художественной мастерской</li>
+            <li><strong>Визуальная демонстрация:</strong> Галерея и примеры работ показывают искусство, а не просто рассказывают о нём</li>
+            <li><strong>Интерактивность:</strong> Пользователь может "прикоснуться" к разным видам творчества через интерактивные элементы</li>
+            <li><strong>Практическая направленность:</strong> Раздел о хобби помогает выбрать занятие, а не просто информирует</li>
+            <li><strong>Сообщество:</strong> Форма подписки и социальные сети создают ощущение принадлежности к творческому сообществу</li>
+        </ul>
+        
+        <p>Сайт использует принципы юзабилити: интуитивная навигация, адаптивный дизайн для всех устройств, достаточные контрасты для читаемости. Все элементы работают на общую цель — вдохновить пользователя на творчество и помочь найти подходящее хобби.</p>
+    </div>
+</body>
+</html>
